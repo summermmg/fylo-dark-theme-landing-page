@@ -103,3 +103,23 @@ export const NavLink = styled(Link)`
         display: table;
     }
 `
+
+export const NavItemBtn = styled.li`
+    @media screen and (max-width: 960px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* height: 120px; */
+    }
+`
+
+export const NavBtnLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 2rem;
+    height: 100%;
+`
+
