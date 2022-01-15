@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/fylo-dark-theme-landing-page/static/js/main.5b1bf4dd.js",
+    "static/media/illustration-intro.png": "/fylo-dark-theme-landing-page/static/media/illustration-intro.c20d85255009f195b4a6.png",
+    "static/media/illustration-stay-productive.png": "/fylo-dark-theme-landing-page/static/media/illustration-stay-productive.5d7a50ea74b08000cd67.png",
+    "static/media/illustration-home2.png": "/fylo-dark-theme-landing-page/static/media/illustration-home2.cd103d8a488fc6217686.png",
+    "index.html": "/fylo-dark-theme-landing-page/index.html",
+    "main.5b1bf4dd.js.map": "/fylo-dark-theme-landing-page/static/js/main.5b1bf4dd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5b1bf4dd.js"
+  ]
+}
