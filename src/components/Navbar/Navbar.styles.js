@@ -96,6 +96,10 @@ export const NavLink = styled(Link)`
     padding: 0 1rem;
     height: 100%;
 
+    &:hover {
+        color: #82CFFD;
+    }
+
     @media screen and (max-width: 960px) {
         text-align: center;
         padding: 2rem;

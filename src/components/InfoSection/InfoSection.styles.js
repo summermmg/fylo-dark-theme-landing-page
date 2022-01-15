@@ -3,7 +3,7 @@ import { Container } from '../Global';
 
 export const StyledInfoSection = styled.div`
     color: hsl(0, 0%, 100%);
-    background: ${({lightBg}) => lightBg ? '#fff' : 'hsl(219, 30%, 18%)'};
+    background: ${({lightBg}) => lightBg ? '#fff' : 'hsl(217, 28%, 15%)'};
     padding: 50px 0;
     overflow: hidden;
     @media screen and (min-width: 768px) {

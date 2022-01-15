@@ -9,6 +9,10 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         font-family: 'Open Sans', sans-serif;
     }
+
+    body {
+        background: hsl(218, 28%, 13%);
+    }
 `
 export const Container = styled.div`
     width: 100%;
@@ -22,19 +26,48 @@ export const Container = styled.div`
 `
 
 export const StyledButton = styled.button`
-    border-radius: 1rem;
+    border-radius: 1.2rem;
     border: none;
     outline: none;
     cursor: pointer;
     background: ${({primary}) => primary ? 'hsl(198, 60%, 50%)' : 'hsl(176, 68%, 64%)'};
     padding: ${({big}) => big ? '10px 60px' : '10px 20px'};
-    font-size: ${({fontBig}) => fontBig ? '20px': '16px'};
+    font-size: ${({fontBig}) => fontBig ? '18px': '14px'};
     color: hsl(0, 0%, 100%);
     white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+	z-index: 1;
 
-    &:hover {
-        transition: all 0.3s ease-out;
-    }
+    &:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: ${({primary}) => primary ? 'hsl(198, 60%, 50%)' : 'hsl(176, 68%, 64%)'};
+		border-radius: 1.2rem;
+		z-index: -2;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: #82CFFD;
+		transition: all .3s;
+		border-radius: 1.2rem;
+		z-index: -1;
+	}
+	&:hover {
+		color: #fff;
+		&:before {
+			width: 100%;
+		}
+	}
 
     @media screen and (max-width: 960px) {
         width: 100%;
