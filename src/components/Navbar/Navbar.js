@@ -60,11 +60,11 @@ const Navbar = () => {
                         </NavItem>
                         <NavItemBtn>
                             {button ? (
-                                <NavBtnLink to="/sign-up">
+                                <NavBtnLink to="/">
                                     <StyledButton primary>SIGN-UP</StyledButton>
                                 </NavBtnLink>
                             ) : (
-                                <NavBtnLink to="/sign-up">
+                                <NavBtnLink to="/">
                                     <StyledButton fontBig big primary>
                                         SIGN-UP
                                     </StyledButton>

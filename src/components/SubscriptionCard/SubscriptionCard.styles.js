@@ -3,6 +3,7 @@ import { Container } from '../Global';
 
 export const StyledSubCard = styled.div`
     color: hsl(0, 0%, 100%);
+    position: relative;
 `
 
 export const SubCardContainer = styled(Container)`
@@ -12,6 +13,10 @@ export const SubCardContainer = styled(Container)`
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     @media screen and (max-width: 768px) {
         width: 80%;

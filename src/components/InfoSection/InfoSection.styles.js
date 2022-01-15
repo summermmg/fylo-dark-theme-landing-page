@@ -6,8 +6,9 @@ export const StyledInfoSection = styled.div`
     background: ${({lightBg}) => lightBg ? '#fff' : 'hsl(217, 28%, 15%)'};
     padding: 50px 0;
     overflow: hidden;
+
     @media screen and (min-width: 768px) {
-        height: 80vh;
+        height: 70vh;
     }
 `
 
