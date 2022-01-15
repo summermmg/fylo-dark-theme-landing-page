@@ -16,26 +16,26 @@ import {IconContext} from 'react-icons/lib';
 import { StyledButton } from '../Global';
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false)
-    const [button, setButton] = useState(true)
+    const [open, setOpen] = useState(false);
+    const [button, setButton] = useState(true);
 
     const handleClick = () => {
-        setOpen(prev => !prev)
+        setOpen(prev => !prev);
     }
 
     const showButton = () => {
         if (window.innerWidth <= 960) {
-            setButton(false)
+            setButton(false);
         } else {
-            setButton(true)
+            setButton(true);
         }
     }
 
     useEffect(() => {
-        showButton()
+        showButton();
     }, [])
 
-    window.addEventListener('resize', showButton)
+    window.addEventListener('resize', showButton);
 
     return (
         <IconContext.Provider value={{ color: 'hsl(0, 0%, 100%)' }}>
@@ -65,7 +65,7 @@ const Navbar = () => {
                                 </NavBtnLink>
                             ) : (
                                 <NavBtnLink to="/sign-up">
-                                    <StyledButton fontBig primary>
+                                    <StyledButton fontBig big primary>
                                         SIGN-UP
                                     </StyledButton>
                                 </NavBtnLink>

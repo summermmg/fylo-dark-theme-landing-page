@@ -42,4 +42,4 @@ export const StyledButton = styled.button`
 `
 
 
-export default GlobalStyles
+export default GlobalStyles;
